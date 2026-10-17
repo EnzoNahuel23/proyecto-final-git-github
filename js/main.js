@@ -5,12 +5,40 @@ const fecha = document.getElementById("fecha");
 const btnBuscar = document.getElementById("btn-buscar");
 const seccionResultados = document.getElementById("resultados");
 const listaResultados = document.getElementById("lista-resultados");
+const mensaje = document.getElementById("mensaje");
 
 const aerolineas = ["Aerolíneas Argentinas", "Flybondi", "JetSMART"];
 
+// No se puede elegir una fecha anterior a hoy
+const ahora = new Date();
+const hoy = new Date(ahora.getTime() - ahora.getTimezoneOffset() * 60000)
+    .toISOString()
+    .split("T")[0];
+fecha.min = hoy;
+
 btnBuscar.addEventListener("click", function () {
+    const error = validarBusqueda();
+    if (error) {
+        mensaje.textContent = error;
+        seccionResultados.classList.add("oculto");
+        return;
+    }
+    mensaje.textContent = "";
     mostrarResultados();
 });
+
+function validarBusqueda() {
+    if (origen.value === destino.value) {
+        return "El origen y el destino no pueden ser iguales.";
+    }
+    if (fecha.value === "") {
+        return "Elegí una fecha de salida.";
+    }
+    if (fecha.value < hoy) {
+        return "La fecha de salida no puede ser anterior a hoy.";
+    }
+    return "";
+}
 
 function mostrarResultados() {
     const textoOrigen = origen.options[origen.selectedIndex].text;
