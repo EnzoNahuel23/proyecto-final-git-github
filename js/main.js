@@ -73,3 +73,21 @@ function mostrarResultados() {
     seccionResultados.classList.remove("oculto");
     seccionResultados.scrollIntoView({ behavior: "smooth" });
 }
+
+// Al elegir un destino destacado que está en el buscador, se completa
+document.querySelectorAll(".destino[data-destino]").forEach(function (tarjeta) {
+    tarjeta.addEventListener("click", function () {
+        destino.value = tarjeta.dataset.destino;
+    });
+});
+
+// Resalta el ícono del menú que se eligió
+const enlacesMenu = document.querySelectorAll(".nav-iconos a");
+enlacesMenu.forEach(function (enlace) {
+    enlace.addEventListener("click", function () {
+        enlacesMenu.forEach(function (otro) {
+            otro.classList.remove("activo");
+        });
+        enlace.classList.add("activo");
+    });
+});
