@@ -107,7 +107,7 @@ git push -u origin nombre-de-la-rama
 
 ## 👥 Integrantes
 
-| `Enzo` |
+| `Enzo Nahuel Carnero` |
 | `Riccardi Eric` | 
 | `Alexis Nahuel Bernal` |
 
