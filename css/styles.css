@@ -207,6 +207,18 @@
             font-size: 1.1rem;
         }
 
+        /* Resultados de la búsqueda */
+        .oculto {
+            display: none;
+        }
+
+        .mensaje {
+            min-height: 1.5rem;
+            margin-top: 1rem;
+            color: #ffdddd;
+            font-weight: bold;
+        }
+
         /* Footer */
         footer {
             background-color: var(--primary-color);
