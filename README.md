@@ -107,11 +107,9 @@ git push -u origin nombre-de-la-rama
 
 ## 👥 Integrantes
 
-| Nombre | Rol / Tarea | GitHub |
-|---|---|---|
-| Enzo Nahuel | _completar_ | [@EnzoNahuel23](https://github.com/EnzoNahuel23) |
-| Eric Riccardi | Documentación (README) | _completar_ |
-| _completar_ | _completar_ | _completar_ |
+| `Enzo` |
+| `Riccardi Eric` | 
+| `Alexis Nahuel Bernal` |
 
 ## 📈 Estado
 
