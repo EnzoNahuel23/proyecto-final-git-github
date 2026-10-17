@@ -73,3 +73,22 @@ function mostrarResultados() {
     seccionResultados.classList.remove("oculto");
     seccionResultados.scrollIntoView({ behavior: "smooth" });
 }
+
+// Al elegir una tarjeta de destino, se completa el buscador
+document.querySelectorAll(".card[data-destino]").forEach(function (tarjeta) {
+    tarjeta.addEventListener("click", function () {
+        destino.value = tarjeta.dataset.destino;
+        document.getElementById("inicio").scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+// Resalta el enlace del menú que se eligió
+const enlacesMenu = document.querySelectorAll(".nav-links a");
+enlacesMenu.forEach(function (enlace) {
+    enlace.addEventListener("click", function () {
+        enlacesMenu.forEach(function (otro) {
+            otro.classList.remove("activo");
+        });
+        enlace.classList.add("activo");
+    });
+});

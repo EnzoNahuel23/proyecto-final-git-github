@@ -62,8 +62,13 @@
             transition: color 0.3s;
         }
 
-        .nav-links a:hover {
+        .nav-links a:hover,
+        .nav-links a.activo {
             color: var(--secondary-color);
+        }
+
+        .card[data-destino] {
+            cursor: pointer;
         }
 
         /* Hero / Buscador de vuelos */
