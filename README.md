@@ -10,10 +10,11 @@ El objetivo principal no es la complejidad de la página, sino **utilizar Git y 
 
 **Oeste Vuelos** es una landing page para buscar vuelos dentro de la Argentina. Incluye:
 
-- **Barra de navegación** fija con enlaces a Inicio, Destinos, Promociones y Contacto.
+- **Encabezado** con el logo de Oeste Vuelos y un menú de íconos (Vuelos, Hoteles, Paquetes y más).
 - **Sección principal (hero)** con un buscador de vuelos: origen, destino y fecha de salida.
-- **Destinos destacados**: tarjetas de Bariloche, Cataratas del Iguazú y Ushuaia con descripción y precio de referencia.
-- **Pie de página** con los derechos de la agencia.
+- **Ofertas destacadas**: ocho destinos de la Argentina con imagen y precio de referencia.
+- **¿Por qué elegirnos?**: cuotas, compra segura y atención 24 hs.
+- **Pie de página** con el nombre de la agencia.
 - **Diseño responsive**: en pantallas de menos de 768 px el buscador se acomoda en una columna.
 
 ## 🎯 Objetivo
@@ -31,6 +32,8 @@ proyecto-final-git-github/
 ├── index.html        → Estructura de la página (HTML)
 ├── README.md         → Documentación del proyecto
 ├── .gitignore        → Archivos que Git no debe versionar
+│
+├── img/            → Imágenes de la página
 │
 ├── css/
 │   └── styles.css    → Estilos, paleta de colores y diseño responsive
@@ -68,7 +71,7 @@ proyecto-final-git-github/
 1. Elegir origen, destino y fecha de salida, y presionar **Buscar Vuelos**.
 2. Se muestran los vuelos disponibles con su precio.
 3. El origen y el destino deben ser distintos, y la fecha no puede ser anterior a hoy.
-4. Al hacer clic en un destino destacado, se completa el destino del buscador.
+4. Los destinos destacados llevan al buscador.
 
 ## 🌿 Organización del trabajo en ramas
 
