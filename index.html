@@ -3,25 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oeste Vuelos - Tu agencia de vuelos nacionales</title>
+    <title>Oeste Vuelos</title>
+    <link rel="icon" type="image/png" href="img/avion.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Barra de Navegación -->
-    <header>
-        <div class="nav-container">
-            <a href="#" class="logo">✈️ Oeste Vuelos</a>
-            <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#destinos">Destinos</a></li>
-                <li><a href="#promociones">Promociones</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+
+    <header class="header">
+        <div class="contenedor header-contenido">
+            <a href="#" class="logo"><img src="img/avion.png" alt=""> Oeste Vuelos</a>
+            <div class="acciones">
+                <button class="btn-moneda"><i class="fa-solid fa-globe"></i> AR (ARS)</button>
+                <button class="btn-circulo" title="Favoritos"><i class="fa-regular fa-heart"></i></button>
+                <button class="btn-circulo" title="Mi cuenta"><i class="fa-solid fa-user"></i></button>
+            </div>
         </div>
+
+        <nav class="nav-iconos">
+            <ul class="contenedor">
+                <li><a href="#buscador"><i class="fa-solid fa-plane"></i>Vuelos</a></li>
+                <li><a href="#buscador"><i class="fa-solid fa-bed"></i>Hoteles</a></li>
+                <li><a href="#buscador"><i class="fa-solid fa-suitcase"></i>Paquetes</a></li>
+                <li><a href="#"><i class="fa-solid fa-briefcase-medical"></i>Asistencias</a></li>
+                <li><a href="#"><i class="fa-solid fa-car"></i>Autos</a></li>
+                <li><a href="#"><i class="fa-solid fa-ticket"></i>Actividades</a></li>
+                <li><a href="#"><i class="fa-solid fa-bus"></i>Micros</a></li>
+                <li><a href="#"><i class="fa-solid fa-bullhorn"></i>Blog</a></li>
+                <li><a href="#ofertas"><i class="fa-solid fa-earth-americas"></i>Explorar</a></li>
+                <li><a href="#"><i class="fa-solid fa-sim-card"></i>eSIM</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Sección Hero y Buscador -->
-    <section class="hero">
+    <section class="hero" id="buscador">
         <h1>Volá por toda la Argentina con Oeste Vuelos</h1>
         <p>Encontrá las mejores tarifas para viajar a cualquier provincia.</p>
         
@@ -61,40 +77,91 @@
         <div class="grid-destinos" id="lista-resultados"></div>
     </section>
 
-    <!-- Destinos Populares -->
-    <section class="destinos" id="destinos">
-        <h2>Destinos Destacados</h2>
-        <div class="grid-destinos">
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbtTG6hYMevRW-TzbeAtD5Ttc1Dl_IKbLZMtZbGKPNXQ&s=10" alt="Bariloche">
-                <div class="card-content">
-                    <h3>San Carlos de Bariloche</h3>
-                    <p>Lagos, nieve y paisajes increíbles en la Patagonia argentina.</p>
-                    <span class="price">Desde $75.000 final</span>
+    <section class="contenedor seccion" id="ofertas">
+        <h2>Ofertas destacadas</h2>
+        <div class="grilla-destinos">
+            <a href="#buscador" class="destino" style="background-image: url('img/ischigualasto.png');">
+                <div class="destino-info">
+                    <h3>Ischigualasto, San Juan</h3>
+                    <span class="destino-precio"><small>$</small>198.450</span>
+                    <p>Desde Buenos Aires</p>
                 </div>
+            </a>
+            <a href="#buscador" class="destino" style="background-image: url('img/humahuaca.webp');">
+                <div class="destino-info">
+                    <h3>Humahuaca, Jujuy</h3>
+                    <span class="destino-precio"><small>$</small>176.300</span>
+                    <p>Desde Buenos Aires</p>
+                </div>
+            </a>
+            <a href="#buscador" class="destino" style="background-image: url('img/mendoza.webp');">
+                <div class="destino-info">
+                    <h3>Mendoza</h3>
+                    <span class="destino-precio"><small>$</small>129.570</span>
+                    <p>Desde Buenos Aires</p>
+                </div>
+            </a>
+            <a href="#buscador" class="destino" style="background-image: url('img/catamarca.webp');">
+                <div class="destino-info">
+                    <h3>Catamarca</h3>
+                    <span class="destino-precio"><small>$</small>165.820</span>
+                    <p>Desde Buenos Aires</p>
+                </div>
+            </a>
+            <a href="#buscador" class="destino" style="background-image: url('img/talampaya.webp');">
+                <div class="destino-info">
+                    <h3>Talampaya, La Rioja</h3>
+                    <span class="destino-precio"><small>$</small>187.640</span>
+                    <p>Desde Buenos Aires</p>
+                </div>
+            </a>
+            <a href="#buscador" class="destino" style="background-image: url('img/misiones.webp');">
+                <div class="destino-info">
+                    <h3>Misiones</h3>
+                    <span class="destino-precio"><small>$</small>142.910</span>
+                    <p>Desde Buenos Aires</p>
+                </div>
+            </a>
+            <a href="#buscador" class="destino" style="background-image: url('img/buenos-aires.webp');">
+                <div class="destino-info">
+                    <h3>Buenos Aires</h3>
+                    <span class="destino-precio"><small>$</small>98.760</span>
+                    <p>Desde Córdoba</p>
+                </div>
+            </a>
+            <a href="#buscador" class="destino" style="background-image: url('img/el-calafate.webp');">
+                <div class="destino-info">
+                    <h3>El Calafate</h3>
+                    <span class="destino-precio"><small>$</small>214.380</span>
+                    <p>Desde Buenos Aires</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="contenedor seccion">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="beneficios">
+            <div class="beneficio">
+                <img src="img/tarjetas.png" alt="Tarjetas">
+                <h3>Hasta 12 cuotas</h3>
+                <p>Pagá tu viaje en cuotas con todas las tarjetas.</p>
             </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0s7RemapVJWigiyGFd4ORPlMqj-rhpZkUixx3q2xIg&s=10" alt="Iguazú">
-                <div class="card-content">
-                    <h3>Cataratas del Iguazú</h3>
-                    <p>Viví la naturaleza en una de las maravillas del mundo.</p>
-                    <span class="price">Desde $68.000 final</span>
-                </div>
+            <div class="beneficio">
+                <img src="img/candado.png" alt="Candado">
+                <h3>Compra segura</h3>
+                <p>Tus datos siempre protegidos.</p>
             </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn5QAjU07vfrBczMZa98VWPls8WVNhLbE1NWh8EeTH4A&s=10" alt="Ushuaia">
-                <div class="card-content">
-                    <h3>Ushuaia</h3>
-                    <p>Explorá el Fin del Mundo y la Cordillera de los Andes.</p>
-                    <span class="price">Desde $110.000 final</span>
-                </div>
+            <div class="beneficio">
+                <img src="img/telefono.png" alt="Teléfono">
+                <h3>Atención 24 hs</h3>
+                <p>Te ayudamos antes, durante y después del viaje.</p>
             </div>
         </div>
     </section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2026 Oeste Vuelos. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <p>&copy; 2026 Oeste Vuelos · Proyecto final del curso de Git y GitHub</p>
     </footer>
 
     <script src="js/main.js"></script>
