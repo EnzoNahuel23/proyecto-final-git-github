@@ -119,7 +119,7 @@ git push -u origin nombre-de-la-rama
 
 | Nombre |
 |---|
-| Enzo |
+| Enzo Nahuel Carnero |
 | Riccardi Eric |
 | Alexis Nahuel Bernal |
 
