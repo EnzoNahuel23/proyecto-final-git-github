@@ -50,8 +50,15 @@
                 <label for="fecha">Fecha de salida</label>
                 <input type="date" id="fecha">
             </div>
-            <button class="btn-search">Buscar Vuelos</button>
+            <button class="btn-search" id="btn-buscar">Buscar Vuelos</button>
         </div>
+        <p class="mensaje" id="mensaje" aria-live="polite"></p>
+    </section>
+
+    <!-- Resultados de la búsqueda -->
+    <section class="destinos oculto" id="resultados">
+        <h2>Vuelos disponibles</h2>
+        <div class="grid-destinos" id="lista-resultados"></div>
     </section>
 
     <!-- Destinos Populares -->
@@ -90,5 +97,6 @@
         <p>&copy; 2026 Oeste Vuelos. Todos los derechos reservados.</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
