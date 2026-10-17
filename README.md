@@ -63,6 +63,13 @@ proyecto-final-git-github/
    ```
 3. Abrir `index.html` en el navegador (o usar la extensión **Live Server** de VS Code).
 
+### Uso del buscador
+
+1. Elegir origen, destino y fecha de salida, y presionar **Buscar Vuelos**.
+2. Se muestran los vuelos disponibles con su precio.
+3. El origen y el destino deben ser distintos, y la fecha no puede ser anterior a hoy.
+4. Al hacer clic en un destino destacado, se completa el destino del buscador.
+
 ## 🌿 Organización del trabajo en ramas
 
 Cada parte del proyecto se desarrolla en su propia rama y se integra a `main` mediante un Pull Request.
@@ -107,9 +114,11 @@ git push -u origin nombre-de-la-rama
 
 ## 👥 Integrantes
 
-| `Enzo` |
-| `Riccardi Eric` | 
-| `Alexis Nahuel Bernal` |
+| Nombre |
+|---|
+| Enzo |
+| Riccardi Eric |
+| Alexis Nahuel Bernal |
 
 ## 📈 Estado
 
@@ -117,7 +126,7 @@ git push -u origin nombre-de-la-rama
 
 - [x] Estructura HTML de la página
 - [x] Estilos y diseño responsive
-- [ ] Funcionalidad del buscador de vuelos (JavaScript)
+- [x] Funcionalidad del buscador de vuelos (JavaScript)
 - [ ] Secciones de Promociones y Contacto
 - [x] Documentación del proyecto
 
