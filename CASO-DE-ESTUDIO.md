@@ -37,13 +37,13 @@ Se diseñó e implementó la landing page para la agencia ficticia **Oeste Vuelo
 
 * **¿Por qué?** Para evitar trabajar directamente sobre la rama `main` y prevenir que cambios incompletos rompieran la versión estable del proyecto.
 * **Alternativas consideradas:** Trabajar todos directamente sobre `main` o sobre una única rama compartida.
-* **Resultado:** Se crearon ramas dedicadas (`estructura-html`, `estilo-css`, `funcionalidad-principal`, `docs/readme`), garantizando que `main` se mantuviera siempre estable.
+* **Resultado:** Se crearon ramas dedicadas (`estructura-html`, `estilo-css`, `funcionalidad-principal`, `docs/readme`, `implementacion-caso-de-estudio`, `implementacion-promociones-contacto`), garantizando que `main` se mantuviera siempre estable.
 
 ### Decisión 2: Estándar para mensajes de commit (*Conventional Commits*)
 
 * **¿Por qué?** Para mantener un historial claro, uniforme y fácil de auditar por cualquier integrante del equipo.
 * **Alternativas consideradas:** Escribir mensajes libres o informales (ej. "cambios", "fix", "listo").
-* **Resultado:** Se adoptaron prefijos estandarizados (`feat:`, `style:`, `docs:`, `fix:`), lo que permitió comprender de forma inmediata la evolución del código en los 29 commits del repositorio.
+* **Resultado:** Se adoptaron prefijos estandarizados (`feat:`, `style:`, `docs:`, `fix:`), lo que permitió comprender de forma inmediata la evolución del código en los 33 commits del repositorio.
 
 ### Decisión 3: Arquitectura CSS con variables y diseño responsivo
 
@@ -67,7 +67,11 @@ Se diseñó e implementó la landing page para la agencia ficticia **Oeste Vuelo
 
 ## Resultado
 
-El proyecto alcanzó un estado funcional y estable. La landing page de **Oeste Vuelos** permite realizar búsquedas simuladas de vuelos con resultados dinámicos y precios de referencia, presentando una interfaz clara y responsiva. Toda la evolución del proyecto quedó documentada y respaldada por 7 *Issues* cerradas y múltiples *Pull Requests* integradas con éxito.
+✅ **El proyecto se da por terminado en su estado final.**
+
+La landing page de **Oeste Vuelos** alcanzó un estado funcional, estable y completo respecto a lo planificado: permite realizar búsquedas simuladas de vuelos con resultados dinámicos y precios de referencia, presenta las secciones de **Ofertas destacadas**, **¿Por qué elegirnos?**, **Promociones vigentes** y **Contacto** con formulario validado, y respeta el diseño responsive en dispositivos móviles. Toda la evolución del proyecto quedó documentada y respaldada por 7 *Issues* cerradas y múltiples *Pull Requests* integradas con éxito, con un total de **33 commits** que siguen la convención de mensajes acordada.
+
+Los requisitos de la entrega —estructura HTML, estilos responsive, funcionalidad del buscador, secciones de Promociones y Contacto, documentación y caso de estudio— se encuentran **todos cumplidos**.
 
 ## Aprendizajes
 
@@ -75,7 +79,9 @@ El proyecto alcanzó un estado funcional y estable. La landing page de **Oeste V
 2. **Uso profesional de Git y GitHub:** La dinámica de ramas, revisión entre pares (*code review*) y la integración ordenada con *Pull Requests*.
 3. **Comunicación en equipo:** La importancia de acordar convenciones de código y comentarios claros en cada commit para facilitar el trabajo colaborativo.
 
-## Próximos Pasos
+## Mejoras futuras (fuera del alcance de la entrega)
+
+El proyecto se considera **cerrado**; las siguientes ideas quedan registradas como posibles mejoras para una versión posterior:
 
 * Incorporar la selección de la cantidad de pasajeros y clase de vuelo.
 * Integrar una simulación de pasarela de pagos para completar la reserva de pasajes.

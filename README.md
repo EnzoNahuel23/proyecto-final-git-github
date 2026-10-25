@@ -31,17 +31,18 @@ El objetivo principal no es la complejidad de la página, sino **utilizar Git y 
 ```
 proyecto-final-git-github/
 │
-├── index.html        → Estructura de la página (HTML)
-├── README.md         → Documentación del proyecto
-├── .gitignore        → Archivos que Git no debe versionar
+├── index.html              → Estructura de la página (HTML)
+├── README.md               → Documentación del proyecto
+├── CASO-DE-ESTUDIO.md      → Análisis del caso de estudio (problema, solución y aprendizajes)
+├── .gitignore              → Archivos que Git no debe versionar
 │
-├── img/            → Imágenes de la página
+├── img/                    → Imágenes de la página
 │
 ├── css/
-│   └── styles.css    → Estilos, paleta de colores y diseño responsive
+│   └── styles.css          → Estilos, paleta de colores y diseño responsive
 │
 └── js/
-    └── main.js       → Funcionalidad de la página (JavaScript)
+    └── main.js             → Funcionalidad de la página (JavaScript)
 ```
 
 ## 🛠️ Tecnologías y herramientas
@@ -75,6 +76,12 @@ proyecto-final-git-github/
 3. El origen y el destino deben ser distintos, y la fecha no puede ser anterior a hoy.
 4. Los destinos destacados llevan al buscador.
 
+### Uso del formulario de contacto
+
+1. Completar nombre y apellido, correo electrónico, asunto y mensaje.
+2. Presionar **Enviar consulta**.
+3. El formulario valida los campos en el navegador y muestra el mensaje de confirmación (no envía correos reales).
+
 ## 🌿 Organización del trabajo en ramas
 
 Cada parte del proyecto se desarrolla en su propia rama y se integra a `main` mediante un Pull Request.
@@ -86,6 +93,8 @@ Cada parte del proyecto se desarrolla en su propia rama y se integra a `main` me
 | `estilo-css` | Estilos y diseño en `css/styles.css` |
 | `funcionalidad-principal` | Funcionalidad en `js/main.js` |
 | `docs/readme` | Documentación del proyecto (este archivo) |
+| `implementacion-caso-de-estudio` | Caso de estudio en `CASO-DE-ESTUDIO.md` |
+| `implementacion-promociones-contacto` | Secciones de Promociones y Contacto |
 
 ### Flujo de trabajo del equipo
 
@@ -127,13 +136,16 @@ git push -u origin nombre-de-la-rama
 
 ## 📈 Estado
 
-🚧 **En desarrollo.**
+✅ **Proyecto completado.**
 
 - [x] Estructura HTML de la página
 - [x] Estilos y diseño responsive
 - [x] Funcionalidad del buscador de vuelos (JavaScript)
 - [x] Secciones de Promociones y Contacto
 - [x] Documentación del proyecto
+- [x] Caso de estudio (`CASO-DE-ESTUDIO.md`)
+
+**Entrega final:** todas las secciones planificadas están implementadas, probadas y documentadas. La página funciona sin errores de consola y el formulario de contacto valida los datos ingresados. El trabajo quedó registrado en 33 commits organizados según la convención de ramas y commits del proyecto.
 
 ## 📄 Licencia
 
