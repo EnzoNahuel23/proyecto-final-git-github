@@ -18,7 +18,8 @@ Se diseñó e implementó la landing page para la agencia ficticia **Oeste Vuelo
 * Un **encabezado** con logo y menú de navegación.
 * Un **buscador interactivo de vuelos** (origen, destino y fecha) con validaciones mediante JavaScript.
 * Una grilla de **ofertas destacadas** con destinos nacionales.
-* Una sección informativa (**¿Por qué elegirnos?**) y un pie de página institucional.
+* Una sección informativa (**¿Por qué elegirnos?**), una de **Promociones vigentes** y un formulario de **Contacto** con validación.
+* Un **pie de página** institucional.
 * Un **diseño responsive** adaptado a dispositivos móviles.
 
 ## Tecnologías
@@ -76,6 +77,6 @@ El proyecto alcanzó un estado funcional y estable. La landing page de **Oeste V
 
 ## Próximos Pasos
 
-* Implementar las secciones de **Promociones** y **Contacto**.
 * Incorporar la selección de la cantidad de pasajeros y clase de vuelo.
 * Integrar una simulación de pasarela de pagos para completar la reserva de pasajes.
+* Sumar el envío real del formulario de contacto mediante un servicio de correo electrónico.

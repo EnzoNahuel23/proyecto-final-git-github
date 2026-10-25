@@ -14,6 +14,8 @@ El objetivo principal no es la complejidad de la página, sino **utilizar Git y 
 - **Sección principal (hero)** con un buscador de vuelos: origen, destino y fecha de salida.
 - **Ofertas destacadas**: ocho destinos de la Argentina con imagen y precio de referencia.
 - **¿Por qué elegirnos?**: cuotas, compra segura y atención 24 hs.
+- **Promociones vigentes**: descuentos destacados con precio regular y oferta, con acceso directo al buscador.
+- **Contacto**: datos de la agencia, redes sociales y formulario de consultas con validación en JavaScript.
 - **Pie de página** con el nombre de la agencia.
 - **Diseño responsive**: en pantallas de menos de 768 px el buscador se acomoda en una columna.
 
@@ -130,7 +132,7 @@ git push -u origin nombre-de-la-rama
 - [x] Estructura HTML de la página
 - [x] Estilos y diseño responsive
 - [x] Funcionalidad del buscador de vuelos (JavaScript)
-- [ ] Secciones de Promociones y Contacto
+- [x] Secciones de Promociones y Contacto
 - [x] Documentación del proyecto
 
 ## 📄 Licencia
