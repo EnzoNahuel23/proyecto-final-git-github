@@ -313,8 +313,8 @@
         }
 
         .destino-precio small {
-            font-size: 13px;
-            vertical-align: top;
+            font-size: inherit;
+            vertical-align: baseline;
             margin-right: 2px;
         }
 
@@ -440,8 +440,9 @@
         }
 
         .promo-precio small {
-            font-size: 12px;
-            vertical-align: top;
+            font-size: inherit;
+            vertical-align: baseline;
+            margin-right: 2px;
         }
 
         .promo-precio del {
