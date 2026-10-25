@@ -91,3 +91,54 @@ enlacesMenu.forEach(function (enlace) {
         enlace.classList.add("activo");
     });
 });
+
+// Formulario de contacto
+const formContacto = document.getElementById("form-contacto");
+const mensajeContacto = document.getElementById("mensaje-contacto");
+
+function mostrarMensaje(texto, tipo) {
+    mensajeContacto.textContent = texto;
+    mensajeContacto.classList.remove("error", "exito");
+    mensajeContacto.classList.add(tipo);
+}
+
+formContacto.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const asunto = document.getElementById("asunto").value;
+    const consulta = document.getElementById("consulta").value.trim();
+
+    if (nombre === "") {
+        mostrarMensaje("Ingresá tu nombre y apellido.", "error");
+        return;
+    }
+
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regexEmail.test(email)) {
+        mostrarMensaje("Ingresá un correo electrónico válido.", "error");
+        return;
+    }
+
+    if (asunto === "") {
+        mostrarMensaje("Seleccioná un asunto.", "error");
+        return;
+    }
+
+    if (consulta.length < 10) {
+        mostrarMensaje("El mensaje debe tener al menos 10 caracteres.", "error");
+        return;
+    }
+
+    mostrarMensaje("¡Gracias, " + nombre + "! Recibimos tu consulta y te responderemos a la brevedad.", "exito");
+    formContacto.reset();
+});
+
+// Al elegir una promoción, se lleva al buscador
+document.querySelectorAll(".promo .btn-promo").forEach(function (boton) {
+    boton.addEventListener("click", function () {
+        document.getElementById("mensaje").textContent = "";
+        seccionResultados.classList.add("oculto");
+    });
+});

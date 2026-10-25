@@ -31,6 +31,8 @@
                 <li><a href="#"><i class="fa-solid fa-bus"></i>Micros</a></li>
                 <li><a href="#"><i class="fa-solid fa-bullhorn"></i>Blog</a></li>
                 <li><a href="#ofertas"><i class="fa-solid fa-earth-americas"></i>Explorar</a></li>
+                <li><a href="#promociones"><i class="fa-solid fa-percent"></i>Promociones</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
                 <li><a href="#"><i class="fa-solid fa-sim-card"></i>eSIM</a></li>
             </ul>
         </nav>
@@ -139,6 +141,45 @@
         </div>
     </section>
 
+    <!-- Sección Promociones -->
+    <section class="seccion promociones" id="promociones">
+        <div class="contenedor">
+            <h2>Promociones vigentes</h2>
+            <div class="grilla-promos">
+                <article class="promo">
+                    <span class="promo-etiqueta">-25% OFF</span>
+                    <h3>Interior en avión</h3>
+                    <p>Descuento aplicado a vuelos a Córdoba, Mendoza, Salta y Tucumán.</p>
+                    <div class="promo-pie">
+                        <span class="promo-precio"><small>$</small>97.200 <del>$129.600</del></span>
+                        <a href="#buscador" class="btn-promo">Ver vuelos</a>
+                    </div>
+                </article>
+
+                <article class="promo destacada">
+                    <span class="promo-etiqueta">-30% OFF</span>
+                    <h3>El Calafate ida y vuelta</h3>
+                    <p>Paquete aéreo con 3 noches. Válido para embarques hasta el 30/06.</p>
+                    <div class="promo-pie">
+                        <span class="promo-precio"><small>$</small>150.066 <del>$214.380</del></span>
+                        <a href="#buscador" class="btn-promo">Ver vuelos</a>
+                    </div>
+                </article>
+
+                <article class="promo">
+                    <span class="promo-etiqueta">-15% OFF</span>
+                    <h3>Primera compra</h3>
+                    <p>Usá el cupón <strong>OESTE15</strong> y ahorrá en tu primer pasaje.</p>
+                    <div class="promo-pie">
+                        <span class="promo-precio">Cupón <strong>OESTE15</strong></span>
+                        <a href="#buscador" class="btn-promo">Ver vuelos</a>
+                    </div>
+                </article>
+            </div>
+            <p class="promo-nota">* Promociones sujetas a disponibilidad y a las condiciones de cada aerolínea.</p>
+        </div>
+    </section>
+
     <section class="contenedor seccion">
         <h2>¿Por qué elegirnos?</h2>
         <div class="beneficios">
@@ -156,6 +197,56 @@
                 <img src="img/telefono.png" alt="Teléfono">
                 <h3>Atención 24 hs</h3>
                 <p>Te ayudamos antes, durante y después del viaje.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="seccion contacto" id="contacto">
+        <div class="contenedor">
+            <h2>Contacto</h2>
+            <div class="contacto-grilla">
+                <div class="contacto-info">
+                    <p>¿Tenés dudas sobre una reserva o querés asesoramiento personalizado? Escribinos y te respondemos a la brevedad.</p>
+                    <ul class="contacto-datos">
+                        <li><i class="fa-solid fa-location-dot"></i> Av. Hurlingham 1234, Hurlingham, Buenos Aires</li>
+                        <li><i class="fa-solid fa-phone"></i> +54 11 5555-5555</li>
+                        <li><i class="fa-solid fa-envelope"></i> contacto@oestevuelos.com</li>
+                        <li><i class="fa-solid fa-clock"></i> Lunes a viernes de 9 a 18 hs</li>
+                    </ul>
+                    <div class="contacto-redes">
+                        <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <form class="contacto-form" id="form-contacto" novalidate>
+                    <div class="input-group">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="nombre@correo.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto">
+                            <option value="">Seleccioná una opción</option>
+                            <option value="reserva">Consulta por una reserva</option>
+                            <option value="promociones">Promociones y paquetes</option>
+                            <option value="reclamo">Reclamo o sugerencia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="consulta">Mensaje</label>
+                        <textarea id="consulta" name="consulta" rows="4" placeholder="Escribí tu consulta aquí"></textarea>
+                    </div>
+                    <button type="submit" class="btn-search">Enviar consulta</button>
+                    <p class="mensaje-contacto" id="mensaje-contacto" aria-live="polite"></p>
+                </form>
             </div>
         </div>
     </section>
